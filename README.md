@@ -1,26 +1,30 @@
 # CH² PYQ Vault — GATE Chemical Engineering
 
-A free static study workspace for GATE Chemical Engineering previous-year papers, topic-led revision and answer-key references.
+**Live site:** https://sathwik6174.github.io/gate-ch-pyq-vault/
 
-## Live website
+A topic-led question bank for GATE Chemical Engineering previous-year papers (2007–2025).
 
-Once GitHub Pages finishes deploying, open: https://sathwik6174.github.io/gate-ch-pyq-vault/
+## What’s in the site
 
-## Features
+- **Topic Explorer:** select a syllabus area and open question records across years.
+- **Question bank:** search extracted question text, filter by topic/year, and limit results to items needing review.
+- **Question metadata:** year, question number/section, source PDF page, topic/subtopic, and a topic-suggestion confidence indicator.
+- **Original paper links:** use the source PDF/host link to verify exact wording, symbols, options, figures, and numbering.
+- **Answer-key desk:** answer-key references and a visible conflict log for 2013.
+- **Static hosting:** GitHub Pages; no Python, local server, build step, or account needed to use the site.
 
-- Responsive dark workspace with working section navigation
-- Year-wise paper links covering 2007–2025
-- Topic catalogue for the main GATE CH syllabus areas
-- Answer-key source desk with source-status labels
-- A visible discrepancy log for known 2013 answer-key disagreements
-- No Python, local server or build tooling needed in the browser
+## Data quality and important limitations
 
-## Important scope notes
+The current bank contains 1,270 question records across the supplied papers. Question boundaries and subject/topic labels were generated with a text/OCR-assisted pipeline and syllabus-aligned keyword rules; they have **not** all been manually checked. Each result has a review flag and confidence indicator, and missing/uncertain OCR is called out rather than fabricated. The text shown in the bank is an excerpt/transcription aid, not a replacement for the original PDF, especially for equations, diagrams, linked questions, and answer options.
 
-This initial hosted release links to public paper/key archives; it does not yet include the user's entire PDF collection in the repository. The topic explorer is a syllabus guide, not a manually verified question-by-question classifier. Worked solutions for every question are not yet available. Where official keys are unavailable or third-party sources disagree, verify the original question and keep alternatives visible.
+Official answer keys take precedence where available. Older third-party answers and the 2013 discrepancies are marked for independent verification. Detailed, independently validated worked solutions have not yet been added for every question; no solution is implied merely because a key link is present.
 
 ## Sources
 
-- Official GATE 2026 downloads page and previous-year bulk paper archive: https://gate2026.iitg.ac.in/download.html
+- Official GATE downloads: https://gate2026.iitg.ac.in/download.html
 - NDLI / IIT Kharagpur GATE CH archive: https://ndl.iitkgp.ac.in/cd_document/gate/ch
-- Gate Exam Info CH paper archive (third party): https://www.gateexam.info/previous-papers/CH/
+- Third-party paper archive: https://www.gateexam.info/previous-papers/CH/
+
+## Deployment
+
+GitHub Actions deploys the static site to GitHub Pages when changes reach `main`. Workflow status: https://github.com/Sathwik6174/gate-ch-pyq-vault/actions
